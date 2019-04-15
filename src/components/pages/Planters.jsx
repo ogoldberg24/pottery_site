@@ -18,55 +18,64 @@ import careersBanner from '../../assets/images/banner2.jpg';
 
 function Planters() {
 
-
+  const caption = "Click the image to purchase on etsy"
   const planters = [
     {
       "src": plant1,
       "thumbnail": plant1,
       "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000
+      "thumbnailHeight": 1000,
+      "caption": caption
+      // onClickImage go to etsy link
     },
     {
       "src": plant2,
       "thumbnail": plant2,
       "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000
+      "thumbnailHeight": 1000,
+      "caption": caption
     },
     {
       "src": plant3,
       "thumbnail": plant3,
       "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000
+      "thumbnailHeight": 1000,
+      "caption": caption
     },
     {
       "src": plant4,
       "thumbnail": plant4,
       "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000
+      "thumbnailHeight": 1000,
+      "caption": caption
     },
     {
       "src": plant5,
       "thumbnail": plant5,
       "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000
+      "thumbnailHeight": 1000,
+      "caption": caption
     },
     {
       "src": plant6,
       "thumbnail": plant6,
       "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000
+      "thumbnailHeight": 1000,
+      "caption": caption
     },
     {
       "src": plant7,
       "thumbnail": plant7,
       "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000
+      "thumbnailHeight": 1000,
+      "caption": caption
     },
     {
       "src": plant8,
       "thumbnail": plant8,
       "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000
+      "thumbnailHeight": 1000,
+      "caption": caption
     },
   ]
 
