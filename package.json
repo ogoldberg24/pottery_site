@@ -1,5 +1,5 @@
 {
-  "name": "square-space",
+  "name": "pottery-site",
   "version": "1.0.0",
   "homepage": "https://ogoldberg24.github.io/pottery/",
   "description": "",
@@ -13,7 +13,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "author": "John Sawiris & Colin Worf",
+  "author": "Patrick Kelly",
   "license": "MIT",
   "dependencies": {
     "animated": "^0.2.1",
