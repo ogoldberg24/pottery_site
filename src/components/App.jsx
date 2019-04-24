@@ -30,6 +30,11 @@ function App() {
         <Route path="/planters" component={Planters} />
         <Route path="/dining" component={Dining} />
         <Route path="/drinking" component={Drinking} />
+        <Route path="/etsy"
+          component={() => 
+            { window.location = 'https://www.etsy.com/shop/ogceramics/'; 
+            return null;
+          } }/>
       </Switch>
       <Footer />
     </div>

@@ -1,18 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import logo from '../../assets/images/og-logo.png';
+import logo from '../../assets/images/og_logo.png';
 import { Link } from 'react-router-dom';
 
 
 function Header(props) {
 
+  const imgStyle = {
+    width: '200px',
+    height: '200px'
+  };
+
 
   return (
     <div className='main-banner'>
       <div className='container'>
-        <Link to='/'><img src={logo} /></Link>
+        <Link to='/'><img src={logo} style={imgStyle}/></Link>
         <div className='main-title'>
-          <small>{props.pageTitle}</small>
+          <medium>{props.pageTitle}</medium>
           <h2>{props.head}</h2>
         </div>
       </div>

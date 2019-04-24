@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+
 
 
 function Title(props) {
@@ -28,7 +30,7 @@ function Title(props) {
   return (
     <div style={titleWrap}>
       <h1 style={lrgText}>{props.large}</h1>
-      {(props.small) ? <h4 style={smText}>{props.small}</h4> : ''}
+      {(props.small) ? <h4 style={smText}><Link to="/etsy">{props.small}</Link></h4>: ''}
     </div>
 
   );

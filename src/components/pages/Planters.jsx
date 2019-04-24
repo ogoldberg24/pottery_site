@@ -11,71 +11,76 @@ import plant5 from '../../assets/pottery_grid_images/plant5.jpg'
 import plant6 from '../../assets/pottery_grid_images/plant6.jpg'
 import plant7 from '../../assets/pottery_grid_images/plant7.jpg'
 import plant8 from '../../assets/pottery_grid_images/plant8.jpg'
+import plant9 from '../../assets/pottery_grid_images/plant9.jpg'
 
-import careersBanner from '../../assets/images/banner2.jpg';
+import careersBanner from '../../assets/images/flowers.jpg';
 
 
 
 function Planters() {
 
-  const caption = "Click the image to purchase on etsy"
   const planters = [
     {
       "src": plant1,
       "thumbnail": plant1,
       "thumbnailWidth": 1000,
       "thumbnailHeight": 1000,
-      "caption": caption
-      // onClickImage go to etsy link
     },
     {
       "src": plant2,
       "thumbnail": plant2,
       "thumbnailWidth": 1000,
       "thumbnailHeight": 1000,
-      "caption": caption
+      
     },
     {
       "src": plant3,
       "thumbnail": plant3,
       "thumbnailWidth": 1000,
       "thumbnailHeight": 1000,
-      "caption": caption
+      
     },
     {
       "src": plant4,
       "thumbnail": plant4,
       "thumbnailWidth": 1000,
       "thumbnailHeight": 1000,
-      "caption": caption
+      
     },
     {
       "src": plant5,
       "thumbnail": plant5,
       "thumbnailWidth": 1000,
       "thumbnailHeight": 1000,
-      "caption": caption
+      
     },
     {
       "src": plant6,
       "thumbnail": plant6,
       "thumbnailWidth": 1000,
       "thumbnailHeight": 1000,
-      "caption": caption
+      
     },
     {
       "src": plant7,
       "thumbnail": plant7,
       "thumbnailWidth": 1000,
       "thumbnailHeight": 1000,
-      "caption": caption
+      
     },
     {
       "src": plant8,
       "thumbnail": plant8,
       "thumbnailWidth": 1000,
       "thumbnailHeight": 1000,
-      "caption": caption
+
+    },
+    {
+      "src": plant9,
+      "thumbnail": plant9,
+      "thumbnailWidth": 1000,
+      "thumbnailHeight": 1000,
+
     },
   ]
 

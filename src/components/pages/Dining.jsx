@@ -17,90 +17,78 @@ import plate2 from '../../assets/pottery_grid_images/plate2.jpg'
 
 
 
-import careersBanner from '../../assets/images/banner2.jpg';
+import careersBanner from '../../assets/images/food.jpg';
 
 
 
 function Dining() {
 
-  const caption = "Click the image to purchase on etsy"
   const dining = [
     {
       "src": bowl1,
       "thumbnail": bowl1,
       "thumbnailWidth": 1000,
       "thumbnailHeight": 1000,
-      "caption": caption
     },
     {
       "src": bowl2,
       "thumbnail": bowl2,
       "thumbnailWidth": 1000,
       "thumbnailHeight": 1000,
-      "caption": caption
     },
     {
       "src": bowl3,
       "thumbnail": bowl3,
       "thumbnailWidth": 1000,
       "thumbnailHeight": 1000,
-      "caption": caption
     },
     {
       "src": bowl4,
       "thumbnail": bowl4,
       "thumbnailWidth": 1000,
       "thumbnailHeight": 1000,
-      "caption": caption
     },
     {
       "src": bowl5,
       "thumbnail": bowl5,
       "thumbnailWidth": 1000,
       "thumbnailHeight": 1000,
-      "caption": caption
     },
     {
       "src": bowl6,
       "thumbnail": bowl6,
       "thumbnailWidth": 1000,
       "thumbnailHeight": 1000,
-      "caption": caption
     },
     {
       "src": bowl7,
       "thumbnail": bowl7,
       "thumbnailWidth": 1000,
       "thumbnailHeight": 1000,
-      "caption": caption
     },
     {
       "src": bowl8,
       "thumbnail": bowl8,
       "thumbnailWidth": 1000,
       "thumbnailHeight": 1000,
-      "caption": caption
     },
     {
         "src": bowl9,
         "thumbnail": bowl9,
         "thumbnailWidth": 1000,
         "thumbnailHeight": 1000,
-        "caption": caption
     },
     {
         "src": plate1,
         "thumbnail": plate1,
         "thumbnailWidth": 1000,
         "thumbnailHeight": 1000,
-        "caption": caption
     },
     {
         "src": plate2,
         "thumbnail": plate2,
         "thumbnailWidth": 1000,
         "thumbnailHeight": 1000,
-        "caption": caption
     },
   ]
 
