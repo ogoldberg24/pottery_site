@@ -1,7 +1,7 @@
 {
   "name": "pottery-site",
   "version": "1.0.0",
-  "homepage": "https://ogoldberg24.github.io/personal-site/",
+  "homepage": "https://ogoldberg24.github.io",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "start": "webpack-dev-server",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "author": "Patrick Kelly",
   "license": "MIT",
