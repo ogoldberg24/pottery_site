@@ -8,7 +8,7 @@
     "lint": "eslint src/** src/**/**; exit 0",
     "lint-fix": "eslint src/** src/**/** --fix; exit 0",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -26,7 +26,8 @@
     "react-router-dom": "^4.0.0",
     "react-scripts": "3.0.0",
     "react-transition-group": "^2.2.1",
-    "styled-jsx": "^2.2.4"
+    "styled-jsx": "^2.2.4",
+    "webpack-cli": "^3.3.1"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
