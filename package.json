@@ -1,7 +1,7 @@
 {
   "name": "pottery-site",
   "version": "1.0.0",
-  "homepage": "https://ogoldberg24.github.io/personal-site/",
+  "homepage": "https://ogoldberg24.github.io/personal-site",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "lint-fix": "eslint src/** src/**/** --fix; exit 0",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp build/index.html build/404.html",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },

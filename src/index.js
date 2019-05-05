@@ -9,7 +9,7 @@ import registerServiceWorker from './registerServiceWorker';
 const render = (Component) => {
   ReactDOM.render(
     <AppContainer>
-      <HashRouter>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <Component/>
       </HashRouter>
     </AppContainer>,
