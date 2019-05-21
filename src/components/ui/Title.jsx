@@ -21,10 +21,10 @@ function Title(props) {
   };
 
   const titleWrap = {
-    maxWidth:'1000px',
+    maxWidth:'90%',
     margin:'auto',
     borderBottom:'1px solid #ddd',
-    padding: '100px'
+    padding: '10%'
   };
 
   return (

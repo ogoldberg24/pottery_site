@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 function Header(props) {
 
   const imgStyle = {
-    width: '200px',
-    height: '200px'
+    width: '40%',
+    height: '40%'
   };
 
 
@@ -29,13 +29,13 @@ function Header(props) {
 
         .main-banner {
             background: url(${props.bgImg}) no-repeat center;
-            height: 680px;
+            height: 40%;
             background-size: cover;
         }
 
         .main-banner img {
           position: relative;
-          top: 20px
+          top: 5%
         }
 
         small {
@@ -48,11 +48,11 @@ function Header(props) {
         }
         .main-title h2 {
           font-size: 2rem;
-          max-width: 390px;
+          max-width: 30%;
           line-height: 3rem;
           font-weight: 400;
           margin-top: 0;
-          letter-spacing: 4px;
+          letter-spacing: 1%;
         }
         .main-banner .container {
             height: 100%;
