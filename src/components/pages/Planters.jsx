@@ -86,7 +86,7 @@ function Planters() {
 
   const divStyle = {
     justifyContent: 'center',
-    width: '50%'
+    width: '95%'
     
   };
 

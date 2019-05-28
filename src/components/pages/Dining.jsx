@@ -27,74 +27,74 @@ function Dining() {
     {
       "src": bowl1,
       "thumbnail": bowl1,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
+      "thumbnailWidth": '1000',
+      "thumbnailHeight": '1000',
     },
     {
       "src": bowl2,
       "thumbnail": bowl2,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
+      "thumbnailWidth": '1000',
+      "thumbnailHeight": '1000',
     },
     {
       "src": bowl3,
       "thumbnail": bowl3,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
+      "thumbnailWidth": '1000',
+      "thumbnailHeight": '1000',
     },
     {
       "src": bowl4,
       "thumbnail": bowl4,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
+      "thumbnailWidth": '1000',
+      "thumbnailHeight": '1000',
     },
     {
       "src": bowl5,
       "thumbnail": bowl5,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
+      "thumbnailWidth": '1000',
+      "thumbnailHeight": '1000',
     },
     {
       "src": bowl6,
       "thumbnail": bowl6,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
+      "thumbnailWidth": '1000',
+      "thumbnailHeight": '1000',
     },
     {
       "src": bowl7,
       "thumbnail": bowl7,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
+      "thumbnailWidth": '1000',
+      "thumbnailHeight": '1000',
     },
     {
       "src": bowl8,
       "thumbnail": bowl8,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
+      "thumbnailWidth": '1000',
+      "thumbnailHeight": '1000',
     },
     {
         "src": bowl9,
         "thumbnail": bowl9,
-        "thumbnailWidth": 1000,
-        "thumbnailHeight": 1000,
+        "thumbnailWidth": '1000',
+        "thumbnailHeight": '1000',
     },
     {
         "src": plate1,
         "thumbnail": plate1,
-        "thumbnailWidth": 1000,
-        "thumbnailHeight": 1000,
+        "thumbnailWidth": '1000',
+        "thumbnailHeight": '1000',
     },
     {
         "src": plate2,
         "thumbnail": plate2,
-        "thumbnailWidth": 1000,
-        "thumbnailHeight": 1000,
+        "thumbnailWidth": '1000',
+        "thumbnailHeight": '1000',
     },
   ]
 
   const divStyle = {
     justifyContent: 'center',
-    width: '50%'
+    width: '95%'
     
   };
 
