@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aa20d0c57acf93642e26f4fa85a28a53",
+    "revision": "66f0e1bce9f5ded4b6700e168646a117",
     "url": "/pottery_site/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pottery_site/static/js/2.d53e8952.chunk.js"
   },
   {
-    "revision": "9c3e4d018d049cc6615c",
-    "url": "/pottery_site/static/js/main.32c6a2ea.chunk.js"
+    "revision": "d800253b86f107da1a2f",
+    "url": "/pottery_site/static/js/main.f0896ef4.chunk.js"
   },
   {
     "revision": "8defca9e12b56ea510ef",
