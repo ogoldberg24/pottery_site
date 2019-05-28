@@ -23,7 +23,7 @@ function Header(props) {
       </div>
       <style global jsx>{`
         .container {
-            width: 84vw;
+            width: 100%;
             margin: auto;
         }
 

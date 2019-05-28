@@ -9,9 +9,10 @@ function Nav() {
             display: flex;
             justify-content: center;
             border-bottom: 1px solid #ddd;
+            width: 100%
           }
           nav .navigation {
-            padding: 2rem;
+            padding: 1rem;
             text-decoration: none;
             color: #999;
             font-size: .9rem;
