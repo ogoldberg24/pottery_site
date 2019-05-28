@@ -15,7 +15,7 @@ function Header(props) {
   return (
     <div className='main-banner'>
       <div className='container'>
-        <Link to='/'><img src={logo} style={imgStyle}/></Link>
+        <Link to='/'><img alt={"home"} src={logo} style={imgStyle}/></Link>
         <div className='main-title'>
           <medium>{props.pageTitle}</medium>
           <h2>{props.head}</h2>

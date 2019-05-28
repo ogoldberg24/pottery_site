@@ -1,5 +1,4 @@
 import React from 'react';
-import Banner from '../ui/Banner';
 import Header from '../ui/Header';
 import Nav from '../ui/Nav';
 import Title from '../ui/Title';
