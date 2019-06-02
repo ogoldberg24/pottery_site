@@ -3,133 +3,66 @@ import Nav from '../ui/Nav';
 import Header from '../ui/Header';
 import Gallery from 'react-grid-gallery';
 
-import mug1 from '../../assets/pottery_grid_images/mug1.jpg';
-import mug2 from '../../assets/pottery_grid_images/mug2.jpg'
-import mug3 from '../../assets/pottery_grid_images/mug3.jpg'
-import mug4 from '../../assets/pottery_grid_images/mug4.jpg'
-import mug5 from '../../assets/pottery_grid_images/mug5.jpg'
-import mug6 from '../../assets/pottery_grid_images/mug6.jpg'
-import mug9 from '../../assets/pottery_grid_images/mug9.jpg'
-import mug10 from '../../assets/pottery_grid_images/mug10.jpg'
-import mug11 from '../../assets/pottery_grid_images/mug11.jpg'
-import mug12 from '../../assets/pottery_grid_images/mug12.jpg'
-import mug13 from '../../assets/pottery_grid_images/mug13.jpg'
-import mug14 from '../../assets/pottery_grid_images/mug14.jpg'
+import drinkBanner from '../../assets/images/drink.jpg';
 
+class Drinking extends React.Component {
+  constructor(props) {
+    super(props);
 
+    this.state = {
+      photoUrls: [],
+    };
+  }
 
-import careersBanner from '../../assets/images/drink.jpg';
+  componentDidMount() {
+    const api_key = "91325757bece30c1b07fa0be1f91dd32"
+    const photoset_id = "72157708875127241"
+    const user_id = "181769962@N03"
+    fetch(
+      `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=${api_key}&photoset_id=${photoset_id}&user_id=${user_id}&format=json&nojsoncallback=1`,
+    )
+    .then(response => response.json())
+    .then(data => data.photoset.photo.map(
+      photoObj =>
+        `https://live.staticflickr.com/${photoObj.server}/${photoObj.id}_${photoObj.secret}_z.jpg`
+      ))
+    .then(data => this.setState({photoUrls: data}))
+  }
 
+  render() {
+    const gallery_obj = []
+    this.state.photoUrls.map(
+      url => {
+        let obj = {
+          src: url,
+          thumbnail: url,
+          thumbnailWidth: 1000,
+          thumbnailHeight: 1000,
+        }
+        return gallery_obj.push(obj)
+      }
+    )
 
+    const divStyle = {
+      justifyContent: 'center',
+      width: '95%'
+      
+    };
 
-function Drinking() {
-
-  const drinking = [
-    {
-      "src": mug1,
-      "thumbnail": mug1,
-      "thumbnailWidth": 1000,
-			"thumbnailHeight": 1000,
-			
-    },
-    {
-      "src": mug2,
-      "thumbnail": mug2,
-      "thumbnailWidth": 1000,
-			"thumbnailHeight": 1000,
-			
-    },
-    {
-      "src": mug3,
-      "thumbnail": mug3,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
-			
-    },
-    {
-      "src": mug4,
-      "thumbnail": mug4,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
-			
-    },
-    {
-      "src": mug5,
-      "thumbnail": mug5,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
-			
-    },
-    {
-      "src": mug6,
-      "thumbnail": mug6,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
-			
-    },
-    {
-        "src": mug9,
-        "thumbnail": mug9,
-        "thumbnailWidth": 1000,
-        "thumbnailHeight": 1000,
-				
-    },
-    {
-        "src": mug10,
-        "thumbnail": mug10,
-        "thumbnailWidth": 1000,
-        "thumbnailHeight": 1000,
-				
-    },
-    {
-        "src": mug11,
-        "thumbnail": mug11,
-        "thumbnailWidth": 1000,
-        "thumbnailHeight": 1000,
-				
-    },
-    {
-        "src": mug12,
-        "thumbnail": mug12,
-        "thumbnailWidth": 1000,
-        "thumbnailHeight": 1000,
-				
-    },
-    {
-        "src": mug13,
-        "thumbnail": mug13,
-        "thumbnailWidth": 1000,
-        "thumbnailHeight": 1000,
-				
-    },
-    {
-        "src": mug14,
-        "thumbnail": mug14,
-        "thumbnailWidth": 1000,
-        "thumbnailHeight": 1000,
-				
-    },
-  ]
-
-  const divStyle = {
-    justifyContent: 'center',
-    width: '95%'
-    
-  };
-
-  return (
-    <div>
-      <Header bgImg={careersBanner}
-        head="For drinking"
-        pageTitle="MUGS"/>
-      <Nav />
-      <center>
-      <div style={divStyle}>
-        <Gallery images={drinking} enableImageSelection={false}/>
+    return (
+      <div>
+        <Header bgImg={drinkBanner}
+          head="For drinking"
+          pageTitle="Mugs"/>
+        <Nav />
+        <center>
+        <div style={divStyle}>
+          <Gallery images={gallery_obj} enableImageSelection={false}/>
+        </div>
+        </center>
       </div>
-      </center>
-    </div>
-  );
+    );
+  }
 }
 
 export default Drinking;
