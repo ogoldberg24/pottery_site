@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "homepage": "https://ogoldberg24.github.io/pottery_site",
   "description": "",
+  "proxy": "https://api.flickr.com",
   "main": "index.js",
   "scripts": {
     "lint": "eslint src/** src/**/**; exit 0",

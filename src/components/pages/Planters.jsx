@@ -3,106 +3,66 @@ import Nav from '../ui/Nav';
 import Header from '../ui/Header';
 import Gallery from 'react-grid-gallery';
 
-import plant1 from '../../assets/pottery_grid_images/plant1.jpg';
-import plant2 from '../../assets/pottery_grid_images/plant2.jpg'
-import plant3 from '../../assets/pottery_grid_images/plant3.jpg'
-import plant4 from '../../assets/pottery_grid_images/plant4.jpg'
-import plant5 from '../../assets/pottery_grid_images/plant5.jpg'
-import plant6 from '../../assets/pottery_grid_images/plant6.jpg'
-import plant7 from '../../assets/pottery_grid_images/plant7.jpg'
-import plant8 from '../../assets/pottery_grid_images/plant8.jpg'
-import plant9 from '../../assets/pottery_grid_images/plant9.jpg'
+import plantBanner from '../../assets/images/flowers.jpg';
 
-import careersBanner from '../../assets/images/flowers.jpg';
+class Planters extends React.Component {
+  constructor(props) {
+    super(props);
 
+    this.state = {
+      photoUrls: [],
+    };
+  }
 
+  componentDidMount() {
+    const api_key = "91325757bece30c1b07fa0be1f91dd32"
+    const photoset_id = "72157708875099312"
+    const user_id = "181769962@N03"
+    fetch(
+      `https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=${api_key}&photoset_id=${photoset_id}&user_id=${user_id}&format=json&nojsoncallback=1`,
+    )
+    .then(response => response.json())
+    .then(data => data.photoset.photo.map(
+      photoObj =>
+        `https://live.staticflickr.com/${photoObj.server}/${photoObj.id}_${photoObj.secret}_z.jpg`
+      ))
+    .then(data => this.setState({photoUrls: data}))
+  }
 
-function Planters() {
+  render() {
+    const gallery_obj = []
+    this.state.photoUrls.map(
+      url => {
+        let obj = {
+          src: url,
+          thumbnail: url,
+          thumbnailWidth: 1000,
+          thumbnailHeight: 1000,
+        }
+        return gallery_obj.push(obj)
+      }
+    )
 
-  const planters = [
-    {
-      "src": plant1,
-      "thumbnail": plant1,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
-    },
-    {
-      "src": plant2,
-      "thumbnail": plant2,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
+    const divStyle = {
+      justifyContent: 'center',
+      width: '95%'
       
-    },
-    {
-      "src": plant3,
-      "thumbnail": plant3,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
-      
-    },
-    {
-      "src": plant4,
-      "thumbnail": plant4,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
-      
-    },
-    {
-      "src": plant5,
-      "thumbnail": plant5,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
-      
-    },
-    {
-      "src": plant6,
-      "thumbnail": plant6,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
-      
-    },
-    {
-      "src": plant7,
-      "thumbnail": plant7,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
-      
-    },
-    {
-      "src": plant8,
-      "thumbnail": plant8,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
+    };
 
-    },
-    {
-      "src": plant9,
-      "thumbnail": plant9,
-      "thumbnailWidth": 1000,
-      "thumbnailHeight": 1000,
-
-    },
-  ]
-
-  const divStyle = {
-    justifyContent: 'center',
-    width: '95%'
-    
-  };
-
-  return (
-    <div>
-      <Header bgImg={careersBanner}
-        head="For your plants"
-        pageTitle="PLANTERS"/>
-      <Nav />
-      <center>
-      <div style={divStyle}>
-        <Gallery images={planters} enableImageSelection={false}/>
+    return (
+      <div>
+        <Header bgImg={plantBanner}
+          head="Planters & vases"
+          pageTitle=""/>
+        <Nav />
+        <center>
+        <div style={divStyle}>
+          <Gallery images={gallery_obj} enableImageSelection={false}/>
+        </div>
+        </center>
       </div>
-      </center>
-    </div>
-  );
+    );
+  }
 }
 
 export default Planters;
