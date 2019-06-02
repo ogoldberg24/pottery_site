@@ -52,8 +52,8 @@ class Drinking extends React.Component {
     return (
       <div>
         <Header bgImg={drinkBanner}
-          head="For drinking"
-          pageTitle="Mugs"/>
+          head="For drinks"
+          pageTitle=""/>
         <Nav />
         <center>
         <div style={divStyle}>

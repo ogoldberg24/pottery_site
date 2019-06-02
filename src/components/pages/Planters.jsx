@@ -53,7 +53,7 @@ class Planters extends React.Component {
       <div>
         <Header bgImg={plantBanner}
           head="For plants"
-          pageTitle="Planters"/>
+          pageTitle=""/>
         <Nav />
         <center>
         <div style={divStyle}>
