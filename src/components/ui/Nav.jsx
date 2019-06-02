@@ -26,9 +26,9 @@ function Nav() {
       `}</style>
       <nav>
         <NavLink exact className="navigation" to='/'>ABOUT</NavLink>
-        <NavLink  className="navigation" to='/planters'>PLANTERS</NavLink>
-        <NavLink  className="navigation" to='/dining'>DINING</NavLink>
-        <NavLink  className="navigation" to='/drinking'>DRINKING</NavLink>
+        <NavLink  className="navigation" to='/planters'>PLANTS</NavLink>
+        <NavLink  className="navigation" to='/dining'>FOOD</NavLink>
+        <NavLink  className="navigation" to='/drinking'>DRINKS</NavLink>
       </nav>
     </div>
   );
