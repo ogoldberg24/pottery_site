@@ -17,7 +17,7 @@ function About() {
       <Header
         bgImg={aboutBanner}
         pageTitle="brooklyn based potter"
-        head="OLIVIA GOLDBERG"/>
+        head="Olivia Goldberg"/>
       <Nav />
       <Title {...titleText} />
     </div>
