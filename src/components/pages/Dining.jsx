@@ -52,7 +52,7 @@ class Dining extends React.Component {
     return (
       <div>
         <Header bgImg={foodBanner}
-          head="Cups & bowls"
+          head="Bowls & plates"
           pageTitle=""/>
         <Nav />
         <center>
