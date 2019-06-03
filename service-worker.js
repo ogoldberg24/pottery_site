@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.0/workbox-sw.js");
 
 importScripts(
-  "/pottery_site/precache-manifest.39b7cf4be248f5a517d2aa365b45b309.js"
+  "/pottery_site/precache-manifest.7d6305b9aa352c6d72b375a4f706d373.js"
 );
 
 self.addEventListener('message', (event) => {
