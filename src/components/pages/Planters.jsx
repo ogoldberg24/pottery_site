@@ -24,7 +24,7 @@ class Planters extends React.Component {
     .then(response => response.json())
     .then(data => data.photoset.photo.map(
       photoObj =>
-        `https://live.staticflickr.com/${photoObj.server}/${photoObj.id}_${photoObj.secret}_z.jpg`
+        `https://live.staticflickr.com/${photoObj.server}/${photoObj.id}_${photoObj.secret}.jpg`
       ))
     .then(data => this.setState({photoUrls: data}))
   }
